@@ -16,49 +16,49 @@ const servicesData = {
       description:
         "Custom websites and web applications built with modern technologies for optimal performance and user experience.",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-      price: "Starting from $2,999",
+      price: "Starting from ₹2,999",
     },
     {
       id: "app-dev",
       name: "Mobile App Development",
       description: "Native and cross-platform mobile applications for iOS and Android with seamless user experiences.",
       image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg",
-      price: "Starting from $4,999",
+      price: "Starting from ₹4,999",
     },
     {
       id: "ai-agent",
       name: "AI Agent Development",
       description: "Intelligent AI agents and chatbots to automate customer service and business processes.",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
-      price: "Starting from $3,999",
+      price: "Starting from ₹3,999",
     },
     {
       id: "extension",
       name: "Browser Extensions",
       description: "Custom browser extensions for Chrome, Firefox, and other browsers to enhance user productivity.",
       image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg",
-      price: "Starting from $1,999",
+      price: "Starting from ₹1,999",
     },
     {
       id: "api-integration",
       name: "API Integration",
       description: "Seamless integration of third-party APIs and services to enhance your application functionality.",
       image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg",
-      price: "Starting from $1,499",
+      price: "Starting from ₹1,499",
     },
     {
       id: "automation",
       name: "Business Automation",
       description: "Automate repetitive tasks and workflows to increase efficiency and reduce operational costs.",
       image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg",
-      price: "Starting from $2,499",
+      price: "Starting from ₹2,499",
     },
     {
       id: "saas",
       name: "SaaS Development",
       description: "Complete Software-as-a-Service platforms with subscription management and scalable architecture.",
       image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg",
-      price: "Starting from $9,999",
+      price: "Starting from ₹9,999",
     },
   ],
   Design: [
@@ -67,42 +67,42 @@ const servicesData = {
       name: "Graphic Design",
       description: "Creative graphic design solutions for print and digital media to enhance your brand presence.",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-      price: "Starting from $499",
+      price: "Starting from ₹499",
     },
     {
       id: "ui-ux",
       name: "UI/UX Design",
       description: "User-centered design solutions that create intuitive and engaging digital experiences.",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-      price: "Starting from $1,999",
+      price: "Starting from ₹1,999",
     },
     {
       id: "packaging",
       name: "Packaging Design",
       description: "Eye-catching packaging designs that make your products stand out on shelves and online.",
       image: "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg",
-      price: "Starting from $799",
+      price: "Starting from ₹799",
     },
     {
       id: "brand-identity",
       name: "Brand Identity",
       description: "Complete brand identity packages including logos, guidelines, and brand assets.",
       image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
-      price: "Starting from $1,499",
+      price: "Starting from ₹1,499",
     },
     {
       id: "logo-design",
       name: "Logo Design",
       description: "Professional logo design that captures your brand essence and creates lasting impressions.",
       image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
-      price: "Starting from $299",
+      price: "Starting from ₹299",
     },
     {
       id: "motion-graphics",
       name: "Motion Graphics",
       description: "Dynamic motion graphics and animations for videos, presentations, and digital content.",
       image: "https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg",
-      price: "Starting from $999",
+      price: "Starting from ₹999",
     },
   ],
   Marketing: [
@@ -111,56 +111,56 @@ const servicesData = {
       name: "SEO Optimization",
       description: "Comprehensive SEO strategies to improve search rankings and increase organic traffic.",
       image: "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg",
-      price: "Starting from $899/month",
+      price: "Starting from ₹899/month",
     },
     {
       id: "geo-targeting",
       name: "Geo-Targeting",
       description: "Location-based marketing campaigns to reach customers in specific geographic areas.",
       image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg",
-      price: "Starting from $699/month",
+      price: "Starting from ₹699/month",
     },
     {
       id: "lead-generation",
       name: "Lead Generation",
       description: "Strategic lead generation campaigns to attract and convert qualified prospects.",
       image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
-      price: "Starting from $1,299/month",
+      price: "Starting from ₹1,299/month",
     },
     {
       id: "google-ads",
       name: "Google Ads",
       description: "Professional Google Ads management to maximize ROI and drive targeted traffic.",
       image: "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg",
-      price: "Starting from $999/month",
+      price: "Starting from ₹999/month",
     },
     {
       id: "meta-ads",
       name: "Meta Ads",
       description: "Facebook and Instagram advertising campaigns to reach your target audience effectively.",
       image: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
-      price: "Starting from $799/month",
+      price: "Starting from ₹799/month",
     },
     {
       id: "social-media",
       name: "Social Media Management",
       description: "Complete social media management including content creation and community engagement.",
       image: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
-      price: "Starting from $599/month",
+      price: "Starting from ₹599/month",
     },
     {
       id: "email-marketing",
       name: "Email Marketing",
       description: "Targeted email campaigns that nurture leads and drive conversions for your business.",
       image: "https://images.pexels.com/photos/1591062/pexels-photo-1591062.jpeg",
-      price: "Starting from $399/month",
+      price: "Starting from ₹399/month",
     },
     {
       id: "content-strategy",
       name: "Content Strategy",
       description: "Strategic content planning and creation to engage your audience and build brand authority.",
       image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg",
-      price: "Starting from $799/month",
+      price: "Starting from ₹799/month",
     },
   ],
   Technology: [
@@ -169,28 +169,28 @@ const servicesData = {
       name: "AR/VR Solutions",
       description: "Immersive augmented and virtual reality experiences for training, marketing, and entertainment.",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
-      price: "Starting from $4,999",
+      price: "Starting from ₹4,999",
     },
     {
       id: "chatbot",
       name: "Chatbot Development",
       description: "Intelligent chatbots for customer support, lead generation, and automated interactions.",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
-      price: "Starting from $1,999",
+      price: "Starting from ₹1,999",
     },
     {
       id: "ecommerce",
       name: "E-commerce Solutions",
       description: "Complete e-commerce platforms with payment processing, inventory management, and analytics.",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-      price: "Starting from $3,999",
+      price: "Starting from ₹3,999",
     },
     {
       id: "maintenance",
       name: "Website Maintenance",
       description: "Ongoing website maintenance, updates, and technical support to keep your site running smoothly.",
       image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg",
-      price: "Starting from $199/month",
+      price: "Starting from ₹199/month",
     },
   ],
 }
@@ -276,7 +276,7 @@ export default function Services() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ₹{
                     selectedCategory === category ? "bg-black text-white" : "bg-white text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -323,7 +323,6 @@ export default function Services() {
                     <h3 className="text-xl font-bold text-black mb-3">{service.name}</h3>
                     <p className="text-gray-700 mb-4 leading-relaxed text-sm">{service.description}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-lg font-bold text-black">{service.price}</span>
                       <Link href="/contact">
                         <Button variant="outline" size="sm" className="rounded-full group bg-transparent">
                           Quote

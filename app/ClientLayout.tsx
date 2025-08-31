@@ -132,12 +132,12 @@ export default function ClientLayout({
                 </div>
               </div>
             </div>
-            <Link
+            {/* <Link
               href="/portfolio"
               className="text-black hover:text-gray-700 cursor-pointer text-base xl:text-lg font-medium transition-colors"
             >
               Portfolio
-            </Link>
+            </Link> */}
             <Link
               href="/about"
               className="text-black hover:text-gray-700 cursor-pointer text-base xl:text-lg font-medium transition-colors"
@@ -314,10 +314,10 @@ export default function ClientLayout({
             {/* Main email/contact */}
             <div className="text-center mb-8">
               <a
-                href="mailto:hello@rareus.com"
+                href="mailto:hello@rareus.in"
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold hover:text-gray-300 transition-colors block"
               >
-                hello@rareus.com
+                hello@rareus.in
               </a>
             </div>
 

@@ -7,10 +7,11 @@ import { ArrowRight, Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const portfolioItems = [
+  // Website Designs (4)
   {
     id: 1,
     title: "Brand Identity Design for Tech Startup",
-    category: "Graphic Design",
+    category: "Website Designs",
     image: "/placeholder-01uzt.png",
     completionTime: "3 WEEKS",
     feeCharged: "$3K",
@@ -26,33 +27,6 @@ const portfolioItems = [
     description: "Full-stack e-commerce solution with custom design and payment integration",
   },
   {
-    id: 3,
-    title: "Investment Pitch Deck for SaaS Company",
-    category: "Pitch Deck",
-    image: "/pitch-deck-slides.png",
-    completionTime: "2 WEEKS",
-    feeCharged: "$2K",
-    description: "20-slide investor pitch deck with compelling visuals and data presentation",
-  },
-  {
-    id: 4,
-    title: "Minimalist Logo Design for Restaurant Chain",
-    category: "Logo Design",
-    image: "/minimalist-restaurant-logo.png",
-    completionTime: "1 WEEK",
-    feeCharged: "$1.5K",
-    description: "Clean, memorable logo design with multiple variations and usage guidelines",
-  },
-  {
-    id: 5,
-    title: "SEO Optimization for Local Business",
-    category: "SEO",
-    image: "/seo-analytics-dashboard.png",
-    completionTime: "4 WEEKS",
-    feeCharged: "$2.5K",
-    description: "Complete SEO audit and optimization resulting in 300% organic traffic increase",
-  },
-  {
     id: 6,
     title: "Corporate Website Redesign",
     category: "Website Designs",
@@ -62,13 +36,24 @@ const portfolioItems = [
     description: "Modern corporate website with CMS integration and responsive design",
   },
   {
-    id: 7,
-    title: "Product Packaging Design",
-    category: "Graphic Design",
-    image: "/modern-product-packaging.png",
-    completionTime: "4 WEEKS",
-    feeCharged: "$4K",
-    description: "Eye-catching packaging design for premium consumer products",
+    id: 9,
+    title: "Portfolio Website for Freelancer",
+    category: "Website Designs",
+    image: "/portfolio-website.png",
+    completionTime: "2 WEEKS",
+    feeCharged: "$1.2K",
+    description: "Sleek personal portfolio website with animations and contact integration",
+  },
+
+  // Pitch Deck (4)
+  {
+    id: 3,
+    title: "Investment Pitch Deck for SaaS Company",
+    category: "Pitch Deck",
+    image: "/pitch-deck-slides.png",
+    completionTime: "2 WEEKS",
+    feeCharged: "$2K",
+    description: "20-slide investor pitch deck with compelling visuals and data presentation",
   },
   {
     id: 8,
@@ -79,7 +64,140 @@ const portfolioItems = [
     feeCharged: "$3.5K",
     description: "Series A funding pitch deck that helped raise $2M in investment",
   },
+  {
+    id: 10,
+    title: "Marketing Pitch Deck for E-commerce Brand",
+    category: "Pitch Deck",
+    image: "/marketing-pitch-deck.png",
+    completionTime: "2 WEEKS",
+    feeCharged: "$2.8K",
+    description: "Visually appealing marketing deck to showcase campaign strategy and results",
+  },
+  {
+    id: 11,
+    title: "Financial Pitch Deck for Fintech Startup",
+    category: "Pitch Deck",
+    image: "/fintech-pitch-deck.png",
+    completionTime: "3 WEEKS",
+    feeCharged: "$3K",
+    description: "Data-driven financial pitch deck with growth projections and market analysis",
+  },
+
+  // Logo Design (4)
+  {
+    id: 4,
+    title: "Minimalist Logo Design for Restaurant Chain",
+    category: "Logo Design",
+    image: "/minimalist-restaurant-logo.png",
+    completionTime: "1 WEEK",
+    feeCharged: "$1.5K",
+    description: "Clean, memorable logo design with multiple variations and usage guidelines",
+  },
+  {
+    id: 12,
+    title: "Tech Startup Logo Design",
+    category: "Logo Design",
+    image: "/tech-startup-logo.png",
+    completionTime: "1 WEEK",
+    feeCharged: "$1.8K",
+    description: "Modern logo with futuristic theme for a SaaS product",
+  },
+  {
+    id: 13,
+    title: "Luxury Fashion Brand Logo",
+    category: "Logo Design",
+    image: "/luxury-fashion-logo.png",
+    completionTime: "2 WEEKS",
+    feeCharged: "$2.2K",
+    description: "Elegant logo design with luxury typography and brand guidelines",
+  },
+  {
+    id: 14,
+    title: "Sports Club Logo Design",
+    category: "Logo Design",
+    image: "/sports-club-logo.png",
+    completionTime: "1 WEEK",
+    feeCharged: "$1.6K",
+    description: "Dynamic, energetic logo design for a local sports club",
+  },
+
+  // SEO (4)
+  {
+    id: 5,
+    title: "SEO Optimization for Local Business",
+    category: "SEO",
+    image: "/seo-analytics-dashboard.png",
+    completionTime: "4 WEEKS",
+    feeCharged: "$2.5K",
+    description: "Complete SEO audit and optimization resulting in 300% organic traffic increase",
+  },
+  {
+    id: 15,
+    title: "E-commerce SEO Strategy",
+    category: "SEO",
+    image: "/ecommerce-seo.png",
+    completionTime: "5 WEEKS",
+    feeCharged: "$3.2K",
+    description: "Keyword targeting, backlink building, and on-page optimization for online store",
+  },
+  {
+    id: 16,
+    title: "SEO for SaaS Startup",
+    category: "SEO",
+    image: "/saas-seo.png",
+    completionTime: "6 WEEKS",
+    feeCharged: "$3.8K",
+    description: "Boosted SaaS website ranking with content marketing and SEO strategy",
+  },
+  {
+    id: 17,
+    title: "Local SEO for Restaurant Chain",
+    category: "SEO",
+    image: "/restaurant-seo.png",
+    completionTime: "3 WEEKS",
+    feeCharged: "$2.1K",
+    description: "Improved local Google rankings and visibility for multi-location restaurant chain",
+  },
+
+  // Graphic Design (4)
+  {
+    id: 7,
+    title: "Product Packaging Design",
+    category: "Graphic Design",
+    image: "/modern-product-packaging.png",
+    completionTime: "4 WEEKS",
+    feeCharged: "$4K",
+    description: "Eye-catching packaging design for premium consumer products",
+  },
+  {
+    id: 18,
+    title: "Social Media Creatives for Startup",
+    category: "Graphic Design",
+    image: "/social-media-creatives.png",
+    completionTime: "2 WEEKS",
+    feeCharged: "$1.2K",
+    description: "Custom-designed social media graphics for brand awareness campaigns",
+  },
+  {
+    id: 19,
+    title: "Brochure Design for Real Estate Company",
+    category: "Graphic Design",
+    image: "/real-estate-brochure.png",
+    completionTime: "2 WEEKS",
+    feeCharged: "$1.5K",
+    description: "High-quality brochure design showcasing real estate projects",
+  },
+  {
+    id: 20,
+    title: "Event Poster Design",
+    category: "Graphic Design",
+    image: "/event-poster.png",
+    completionTime: "1 WEEK",
+    feeCharged: "$800",
+    description: "Vibrant poster design for promotional events and concerts",
+  },
 ]
+
 
 const categories = ["All", "Graphic Design", "Website Designs", "Pitch Deck", "Logo Design", "SEO"]
 
@@ -110,7 +228,7 @@ export default function Portfolio() {
           <div className="lg:w-1/2 lg:pl-12">
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
               <div>
-                <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-2">300+</div>
+                <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-2">150+</div>
                 <div className="text-sm sm:text-base font-medium text-gray-600 uppercase tracking-wider">
                   SUCCESSFUL
                   <br />

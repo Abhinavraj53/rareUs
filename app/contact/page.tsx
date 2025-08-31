@@ -1,13 +1,47 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import Link from "next/link"
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false)
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setLoading(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycbw8ssWIWVu0G4T64LFsYvrTJW1vQJbLEgsmAQyPmGPAeiBBeMOj93cpSnXgBn3LGFrvBg/exec",
+        {
+          method: "POST",
+          body: formData, // send as form-encoded, not JSON
+        }
+      )
+
+      const result = await res.json()
+
+      if (result.status === "success") {
+        alert("✅ Our Team Will Contact you Shortly")
+        form.reset()
+      } else {
+        alert("❌ Failed: " + result.message)
+      }
+    } catch (err) {
+      alert("❌ Error submitting form: " + err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-stone-100">
-
       {/* Hero Section */}
       <section className="px-4 sm:px-6 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto text-center">
@@ -26,41 +60,46 @@ export default function Contact() {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-black text-black mb-8">Send us a message</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                      First Name
+                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                      Full Name
                     </label>
-                    <Input id="firstName" placeholder="John" className="rounded-lg" />
+                    <Input id="fullName" name="fullName" placeholder="Write Your Full Name" required className="rounded-lg" />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                      Last Name
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      Phone Number
                     </label>
-                    <Input id="lastName" placeholder="Doe" className="rounded-lg" />
+                    <Input id="phone" name="phone" type="tel" placeholder=" Write Your Contact Number" required className="rounded-lg" />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                     Email
                   </label>
-                  <Input id="email" type="email" placeholder="john@example.com" className="rounded-lg" />
+                  <Input id="email" name="email" type="email" placeholder="Write your Email Address" required className="rounded-lg" />
                 </div>
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
                     Company
                   </label>
-                  <Input id="company" placeholder="Your Company" className="rounded-lg" />
+                  <Input id="company" name="company" placeholder="Your Company" className="rounded-lg" />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message
                   </label>
-                  <Textarea id="message" placeholder="Tell us about your project..." rows={6} className="rounded-lg" />
+                  <Textarea id="message" name="message" placeholder="Tell us about your project..." rows={6} required className="rounded-lg" />
                 </div>
-                <Button size="lg" className="w-full bg-black text-white hover:bg-gray-800 rounded-lg">
-                  Send Message
+                <Button
+                  type="submit"
+                  size="lg"
+                  disabled={loading}
+                  className="w-full bg-black text-white hover:bg-gray-800 rounded-lg"
+                >
+                  {loading ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
@@ -75,8 +114,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-black mb-1">Email</h3>
-                    <p className="text-gray-700">hello@rareus.com</p>
-                    <p className="text-gray-700">support@rareus.com</p>
+                    <p className="text-gray-700">hello@rareus.in</p>
+                    <p className="text-gray-700">support@rareus.in</p>
                   </div>
                 </div>
 
@@ -97,8 +136,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-black mb-1">Office</h3>
-                    <p className="text-gray-700">NXone near Gaur City Mall</p>
-                    <p className="text-gray-700">Noida, India</p>
+                    <p className="text-gray-700">
+                      T3-4th Floor NX-ONE near Gaur City Mall, Greater Noida, Uttar Pradesh, 201301
+                    </p>
                   </div>
                 </div>
 
@@ -108,7 +148,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-black mb-1">Business Hours</h3>
-                    <p className="text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-700">Monday - Friday: 10:00 AM - 6:00 PM</p>
                     <p className="text-gray-700">Saturday: 10:00 AM - 4:00 PM</p>
                   </div>
                 </div>
