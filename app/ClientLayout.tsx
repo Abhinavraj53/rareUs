@@ -348,6 +348,26 @@ export default function ClientLayout({
                   </li>
                 </ul>
               </div>
+              <div>
+                <h4 className="text-white font-semibold mb-3">Legal</h4>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors">
+                      Terms of Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/refund-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
+                      Refund Policy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
               <div>
                 <h4 className="text-white font-semibold mb-3">Work</h4>
@@ -392,7 +412,7 @@ export default function ClientLayout({
                 </ul>
               </div>
 
-              <div>
+              {/* <div>
                 <h4 className="text-white font-semibold mb-3">Design</h4>
                 <ul className="space-y-2">
                   <li>
@@ -417,7 +437,7 @@ export default function ClientLayout({
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               <div>
                 <h4 className="text-white font-semibold mb-3">Marketing</h4>
