@@ -8,6 +8,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function Contact() {
   const [loading, setLoading] = useState(false)
+  const [consentError, setConsentError] = useState(false)
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -16,12 +17,21 @@ export default function Contact() {
     const form = e.currentTarget
     const formData = new FormData(form)
 
+    // ✅ Check if consent checkbox is ticked
+    if (!formData.get("consent")) {
+      setConsentError(true)
+      setLoading(false)
+      return
+    } else {
+      setConsentError(false)
+    }
+
     try {
       const res = await fetch(
         "https://script.google.com/macros/s/AKfycbw8ssWIWVu0G4T64LFsYvrTJW1vQJbLEgsmAQyPmGPAeiBBeMOj93cpSnXgBn3LGFrvBg/exec",
         {
           method: "POST",
-          body: formData, // send as form-encoded, not JSON
+          body: formData,
         }
       )
 
@@ -72,7 +82,7 @@ export default function Contact() {
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
                     </label>
-                    <Input id="phone" name="phone" type="tel" placeholder=" Write Your Contact Number" required className="rounded-lg" />
+                    <Input id="phone" name="phone" type="tel" placeholder="Write Your Contact Number" required className="rounded-lg" />
                   </div>
                 </div>
                 <div>
@@ -93,6 +103,29 @@ export default function Contact() {
                   </label>
                   <Textarea id="message" name="message" placeholder="Tell us about your project..." rows={6} required className="rounded-lg" />
                 </div>
+
+                {/* ✅ Checkbox inside form */}
+                <div
+                  className={`flex items-start space-x-2 p-2 rounded border ${consentError ? "border-red-500 bg-red-50" : "border-gray-300"
+                    }`}
+                >
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    onChange={(e) => setConsentError(!e.target.checked)}
+                    className="mt-1"
+                  />
+                  <label htmlFor="consent" className="text-sm text-gray-700">
+                    I agree to the{" "}
+                    <a href="/terms-of-service" className="text-blue-600 underline">Terms and Conditions</a> &{" "}
+                    <a href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</a> of the website
+                  </label>
+                </div>
+                {consentError && (
+                  <p className="text-red-500 text-sm">You must agree before submitting.</p>
+                )}
+
                 <Button
                   type="submit"
                   size="lg"
@@ -137,7 +170,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-black mb-1">Office</h3>
                     <p className="text-gray-700">
-                      T3-4th Floor NX-ONE near Gaur City Mall, Greater Noida, Uttar Pradesh, 201301
+                      T3-A405 NX-ONE near Gaur City Mall, Greater Noida, Uttar Pradesh, 201301
                     </p>
                   </div>
                 </div>
@@ -161,11 +194,20 @@ export default function Contact() {
       {/* Map Section */}
       <section className="px-4 sm:px-6 py-12 sm:py-16 bg-stone-100">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center">
-            <p className="text-gray-600 text-lg">Interactive Map Coming Soon</p>
+          <div className="rounded-2xl overflow-hidden h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.954182250317!2d77.43239299999999!3d28.601151299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee57ca9e1ca5%3A0xdc324bf9fd262212!2sNX-ONE!5e0!3m2!1sen!2sin!4v1757750178926!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
+
     </div>
   )
 }

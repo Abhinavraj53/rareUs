@@ -42,9 +42,20 @@ export default function TermsOfService() {
             </ul>
           </section>
 
+          {/* Phone Number & Communication Consent */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-black mb-4">4. Phone Number & Communication Consent</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              By providing your phone number during the sign-up process, you explicitly consent to receive calls and SMS
+              messages from us regarding your account, services, and promotional offers, in accordance with applicable
+              laws and regulations. You may opt out of promotional communications at any time by following the
+              instructions provided in our messages or by contacting us directly.
+            </p>
+          </section>
+
           {/* Intellectual Property */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">4. Intellectual Property</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">5. Intellectual Property</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               All content, logos, designs, and materials on Rareus are the property of Rareus or its licensors. You may
               not copy, modify, distribute, or reproduce any material without prior written permission.
@@ -53,7 +64,7 @@ export default function TermsOfService() {
 
           {/* Purchases & Payments */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">5. Purchases & Payments</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">6. Purchases & Payments</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               If you purchase a product or service from Rareus, you agree to provide accurate billing information. All
               payments must be completed using the accepted payment methods. Refunds, if applicable, will be governed by
@@ -63,7 +74,7 @@ export default function TermsOfService() {
 
           {/* Service Availability */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">6. Service Availability</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">7. Service Availability</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We strive to provide uninterrupted access to our services, but we do not guarantee that Rareus will always
               be available, error-free, or secure. We may suspend or modify our services at any time without prior
@@ -73,7 +84,7 @@ export default function TermsOfService() {
 
           {/* Limitation of Liability */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">7. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">8. Limitation of Liability</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Rareus is not liable for any indirect, incidental, or consequential damages arising from the use of our
               services. Your sole remedy for dissatisfaction with our services is to stop using them.
@@ -82,7 +93,7 @@ export default function TermsOfService() {
 
           {/* Termination */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">8. Termination</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">9. Termination</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We reserve the right to suspend or terminate your access to Rareus if you violate these Terms or engage in
               unlawful activities. Upon termination, your right to use our services will immediately cease.
@@ -91,7 +102,7 @@ export default function TermsOfService() {
 
           {/* Changes to Terms */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">9. Changes to Terms</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">10. Changes to Terms</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Rareus may update these Terms from time to time. We encourage you to review this page periodically. Your
               continued use of our services after changes means you accept the updated Terms.
@@ -100,7 +111,7 @@ export default function TermsOfService() {
 
           {/* Contact Information */}
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">10. Contact Information</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">11. Contact Information</h2>
             <p className="text-gray-700 leading-relaxed">
               If you have any questions about these Terms of Service, please contact us at{" "}
               <strong>support@rareus.in</strong>.

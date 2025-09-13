@@ -487,7 +487,7 @@ export default function ClientLayout({
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <p className="text-gray-400 text-sm">NXone near Gaur City Mall, Noida , India</p>
+                <p className="text-gray-400 text-sm">T3-A405 NX-ONE near Gaur City Mall, Greater Noida, Uttar Pradesh, 201301</p>
               </div>
             </div>
           </div>
