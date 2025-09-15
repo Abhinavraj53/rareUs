@@ -13,7 +13,7 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-black mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to Rareus. These Terms of Service (“Terms”) govern your use of our website, products, and
+              Welcome to RAREUS PRIVATE LIMITED. These Terms of Service (“Terms”) govern your use of our website, products, and
               services. By accessing or using Rareus, you agree to comply with these Terms. If you do not agree, you
               must discontinue using our services.
             </p>

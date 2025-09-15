@@ -11,14 +11,14 @@ export default function PrivacyPolicy() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-black mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              At RareUs, we respect your privacy and are committed to protecting the personal information you share with
+              At RAREUS PRIVATE LIMITED, we respect your privacy and are committed to protecting the personal information you share with
               us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use
               our software solutions, mobile applications, websites, and marketing services.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-black mb-4">2. Information We Collect</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">2.Information We Collect</h2>
             <ul className="list-disc list-inside text-gray-700 leading-relaxed mb-4">
               <li>
                 <strong>Personal Information:</strong> Name, email address, phone number, billing details, and any other

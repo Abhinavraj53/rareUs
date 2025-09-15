@@ -471,7 +471,7 @@ export default function ClientLayout({
           {/* Bottom section */}
           <div className="border-t border-gray-800 py-6">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-              <p className="text-gray-400 text-sm">©rareUs 2025.</p>
+              <p className="text-gray-400 text-sm">©RAREUS PRIVATE LIMITED 2025.</p>
               <div className="flex items-center space-x-4">
                 <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path

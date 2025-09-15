@@ -11,7 +11,7 @@ export default function RefundPolicy() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-black mb-4">1. Overview</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              At RareUs, we strive to deliver high-quality software, applications, websites, and marketing services to
+              At RAREUS PRIVATE LIMITED, we strive to deliver high-quality software, applications, websites, and marketing services to
               our clients. Since our services involve digital products, customized development, and marketing campaigns,
               refunds are handled on a case-by-case basis under the terms outlined below.
             </p>
