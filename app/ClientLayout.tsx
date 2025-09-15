@@ -323,7 +323,7 @@ export default function ClientLayout({
 
             {/* Time zone info */}
             <div className="text-center mb-12">
-              <p className="text-gray-400 text-sm sm:text-base">Worldwide (9:00 AM - 8:00PM EST)</p>
+              <p className="text-gray-400 text-sm sm:text-base">INDIA (10:00AM - 6:00PM IST)</p>
             </div>
 
             {/* Page links grid */}
